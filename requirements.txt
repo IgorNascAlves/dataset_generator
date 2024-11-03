@@ -1,0 +1,6 @@
+pandas==2.2.2
+numpy==2.1.1
+notebook==7.2.2
+seaborn==0.13.2
+groq==0.11.0
+python-dotenv==1.0.1

@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "table_name": "buscante",
+            "columns": [
+                {"column_name": "id_livro", "type": "integer", "range": [1, 100]},
+                {"column_name": "categoria", "type": "string", "range": ["LLM", "Categorias de livros, pode repetir"]},
+                {"column_name": "titulo", "type": "string", "range": ["LLM", "Título do livro não pode livros reais"], "depente":"categoria"},
+                {"column_name": "resumo", "type": "string", "range": ["LLM", "Sinopse em uma frase sobre um livro"], "depente": "titulo"}
+            ],
+            "number_of_rows": 10   
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "data": [
+        {
+            "table_name": "transacoes_passagens",
+            "columns": [
+                {"column_name": "id_cliente", "type": "integer", "range": [1, 1000]},
+                {"column_name": "data_transacao", "type": "date", "range": ["01/01/2022", "31/12/2023"]},
+                {"column_name": "milhas_utilizadas", "type": "integer", "range": "None"},
+                {"column_name": "valor_pago", "type": "float", "range": "None"},
+                {"column_name": "classe_voo", "type": "string", "range": ["Economica", "Executiva", "Primeira Classe"]},
+                {"column_name": "numero_voo", "type": "integer", "range": "None"}
+            ],
+            "number_of_rows": 1000   
+        },
+        {
+            "table_name": "transacoes_milhas",
+            "columns": [
+                {"column_name": "id_cliente", "type": "integer", "range": [1, 1000]},
+                {"column_name": "data_venda_milhas", "type": "date", "range": ["01/01/2022", "31/12/2023"]},
+                {"column_name": "milhas_vendidas", "type": "integer", "range": "None"},
+                {"column_name": "valor_recebido", "type": "float", "range": "None"}
+            ],
+            "number_of_rows": 1000
+        },
+        {
+            "table_name": "clientes",
+            "columns": [
+                {"column_name": "id_cliente", "type": "integer", "range": [1, 1000], "unique": true},
+                {"column_name": "data_nascimento", "type": "date", "range": ["01/01/1960", "31/12/2005"]},
+                {"column_name": "status_fidelidade", "type": "string", "range": ["Bronze", "Prata", "Ouro", "Diamante"]},
+                {"column_name": "milhas_acumuladas", "type": "integer", "range": "None"},
+                {"column_name": "gasto_total", "type": "float", "range": "None"}
+            ],
+            "number_of_rows": 1000
+        }
+    ]
+}
